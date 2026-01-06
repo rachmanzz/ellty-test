@@ -10,7 +10,7 @@ function App() {
     { label: "Page 1", checked: false },
     { label: "Page 2", checked: false },
     { label: "Page 3", checked: false },
-    { label: "Page 4", checked: true }
+    { label: "Page 4", checked: false }
   ])
 
   const setPage = (index: number) => {
