@@ -60,6 +60,7 @@ div.action {
   border-radius: 4px;
   font-size: 14px;
   color: var(--font-color);
+  cursor: pointer;
 }
 
 .btn-variant:hover {
@@ -89,6 +90,7 @@ button.page-item {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   border: 0px;
+  font-size: 14px;
 }
 
 button.page-item:hover {
