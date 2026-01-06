@@ -40,6 +40,7 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
 }
 
 #base-page {
@@ -59,7 +60,6 @@ div.action {
   border: 0;
   border-radius: 4px;
   font-size: 14px;
-  color: var(--font-color);
   cursor: pointer;
 }
 
