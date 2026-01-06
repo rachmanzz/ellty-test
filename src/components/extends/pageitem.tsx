@@ -30,6 +30,7 @@ export default function PageItem({checked, label, onCheck}:pageItemProps) {
             ref.current?.addEventListener("mouseenter", onEnter)
             ref.current?.addEventListener("mouseleave", onLeave)
         }
+        // Cleanup function not needed as event listeners are attached to a stable ref
     }, [])
     return (
         <button className="page-item" ref={ref}>
