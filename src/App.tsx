@@ -34,7 +34,7 @@ function App() {
   return (
     <div id='base-page'>
       <div className='container'>
-        <PageItem onCheck={()=> {setAllPages()}} label='All Page' checked={checkAllPages} />
+        <PageItem onCheck={()=> {setAllPages()}} label='All Pages' checked={checkAllPages} />
         <Divider />
         {pages.map((it, i) => {
           return (<PageItem key={i} onCheck={() => setPage(i)} label={it.label} checked={it.checked} />)
