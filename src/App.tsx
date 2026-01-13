@@ -13,8 +13,6 @@ function App() {
     { label: "Page 4", checked: false },
     { label: "Page 5", checked: false },
     { label: "Page 6", checked: false },
-    { label: "Page 7", checked: false },
-    { label: "Page 8", checked: false },
   ])
 
   const setPage = (index: number) => {
