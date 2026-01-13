@@ -10,7 +10,11 @@ function App() {
     { label: "Page 1", checked: false },
     { label: "Page 2", checked: false },
     { label: "Page 3", checked: false },
-    { label: "Page 4", checked: false }
+    { label: "Page 4", checked: false },
+    { label: "Page 5", checked: false },
+    { label: "Page 6", checked: false },
+    { label: "Page 7", checked: false },
+    { label: "Page 8", checked: false },
   ])
 
   const setPage = (index: number) => {
@@ -36,9 +40,11 @@ function App() {
       <div className='container'>
         <PageItem onCheck={()=> {setAllPages()}} label='All Pages' checked={checkAllPages} />
         <Divider />
+        <div className='items-wrapper'>
         {pages.map((it, i) => {
           return (<PageItem key={i} onCheck={() => setPage(i)} label={it.label} checked={it.checked} />)
         })}
+        </div>
         <Divider />
         <div className='action'><Button>Done</Button></div>
       </div>
