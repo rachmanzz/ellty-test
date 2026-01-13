@@ -35,9 +35,7 @@ export default function PageItem({checked, label, onCheck}:pageItemProps) {
     return (
         <button className="page-item" ref={ref}>
             <div>{label}</div>
-            <div>
-                <CheckBox hover={hover} style={{ width: 35, height: 35 }} checked={checked} />
-            </div>
+            <CheckBox hover={hover} style={{ width: 35, height: 35 }} checked={checked} />
         </button>
     )
 }
