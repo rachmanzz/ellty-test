@@ -52,10 +52,12 @@ body {
 
 div.action {
   padding: 10px 15px;
+  gap: 10px;
 }
 .btn-variant {
   background-color: var(--btn-variant-default);
   width: 100%;
+  height: 40px;
   padding: 10px 20px;
   border: 0;
   border-radius: 4px;
@@ -69,7 +71,8 @@ div.action {
 
 .container {
   margin-top: 85px;
-  min-width: 370px;
+  min-width: 372px;
+  /* min-height: 328px; */
   display: flex;
   flex-direction: column;
   border-radius: 6px;
@@ -86,7 +89,7 @@ button.page-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 15px 8px 22px;
+  padding: 3.5px 15px 3.5px 22px;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   border: 0px;
@@ -99,11 +102,28 @@ button.page-item:hover {
 
 div.divider {
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 9.3px 15px;
+  width: 370px;
+  height: 20px;
 }
 div.divider::after {
   content: "";
+  padding: 0;
   display: block;
   border-bottom: 0.7px solid var(--color-default);
   width: 100%;
+}
+
+div.items-wrapper {
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scrollbar-width: none;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+}
+
+div.items-wrapper::-webkit-scrollbar {
+  display: none;
 }
